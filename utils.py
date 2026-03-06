@@ -2,8 +2,8 @@ import math
 
 def is_prime(n):
     if n < 2:
-        raise ValueError('Đầu vào không hợp lệ')
-    for i in range(2, math.isqrt(n)):
+        return False
+    for i in range(2, math.isqrt(n + 100)):
         if n % i == 0:
             return False
 
